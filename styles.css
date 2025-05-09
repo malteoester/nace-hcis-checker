@@ -1,70 +1,71 @@
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #000;
   margin: 0;
   padding: 0;
-  background: #fff;
-  color: #222;
   line-height: 1.6;
 }
 
 header {
   padding: 2rem;
-  background-color: #f5f7fa;
   border-bottom: 1px solid #ddd;
   text-align: center;
 }
 
 header h1 {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .subtitle {
   font-size: 1rem;
-  color: #555;
+  color: #333;
 }
 
 .explanation {
-  max-width: 600px;
+  max-width: 650px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
 main {
-  max-width: 400px;
+  max-width: 450px;
   margin: 2rem auto;
   padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
   text-align: center;
 }
 
 label {
   display: block;
   margin-bottom: 0.5rem;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 input {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.6rem;
   margin-bottom: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #bbb;
   border-radius: 4px;
 }
 
 button {
-  background-color: #004080;
+  background-color: #001f3f;
   color: white;
   border: none;
-  padding: 0.7rem 1.2rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: 600;
 }
 
 button:hover {
-  background-color: #003366;
+  background-color: #001737;
 }
 
 #result {
@@ -72,17 +73,49 @@ button:hover {
   font-weight: bold;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-bottom: 1px dotted black;
+  margin-top: 1rem;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: #f1f1f1;
+  color: #000;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.8rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; 
+  left: 50%;
+  margin-left: -125px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.9rem;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 footer {
   margin-top: 3rem;
   padding: 2rem;
   font-size: 0.9rem;
   text-align: center;
-  background-color: #f5f7fa;
-  color: #555;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
 footer a {
-  color: #004080;
+  color: #001f3f;
   text-decoration: none;
 }
 
