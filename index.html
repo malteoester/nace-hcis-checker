@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NACE Code HCIS Checker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>NACE Code High Climate Impact Sector (HCIS) Checker</h1>
+      <p class="subtitle">
+        Identify whether a NACE code is classified as a High Climate Impact
+        Sector (HCIS) under ESRS and SFDR reporting frameworks.
+      </p>
+    </header>
+
+    <section class="explanation">
+      <p>
+        High Climate Impact Sectors (HCIS) are defined as sectors listed in
+        Sections A to H and Section L of Annex I to Regulation (EC) No
+        1893/2006. This classification is used in sustainability reporting
+        under:
+      </p>
+      <ul>
+        <li>
+          <strong>ESRS (European Sustainability Reporting Standards)</strong> –
+          e.g., ESRS E1-5
+        </li>
+        <li>
+          <strong>SFDR (Sustainable Finance Disclosure Regulation)</strong> –
+          e.g., Principal Adverse Impact Indicator #6
+        </li>
+      </ul>
+      <p>Use the tool below to check if a NACE code falls under HCIS.</p>
+    </section>
+
+    <main>
+      <label for="naceCodeInput">Enter NACE code (2 or 4 digits):</label>
+      <input
+        type="text"
+        id="naceCodeInput"
+        maxlength="4"
+        placeholder="e.g. 10"
+      />
+      <button id="checkButton">Check classification</button>
+      <p id="result"></p>
+      <small>
+        <a
+          href="https://ec.europa.eu/competition/mergers/cases/index/nace_all.html"
+          target="_blank"
+          >Where can I find my NACE code?</a
+        >
+      </small>
+    </main>
+
+    <footer>
+      <p>
+        Created by Malte Øster.<br />
+        Source: Regulation (EC) No 1893/2006, Delegated Regulation (EU)
+        2022/1288.<br />
+        Disclaimer: This tool is for informational purposes only.
+      </p>
+      <p>
+        <a href="https://github.com/YOURUSERNAME/YOURREPO" target="_blank"
+          >View source on GitHub</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
