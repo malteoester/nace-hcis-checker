@@ -79,6 +79,7 @@ button:hover {
   cursor: pointer;
   border-bottom: 1px dotted black;
   margin-top: 1rem;
+  width: auto; /* ✅ added to ensure width fits text */
 }
 
 .tooltip .tooltiptext {
@@ -100,7 +101,8 @@ button:hover {
   font-size: 0.9rem;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext,
+.tooltip small:hover + .tooltiptext { /* ✅ added */
   visibility: visible;
   opacity: 1;
 }
